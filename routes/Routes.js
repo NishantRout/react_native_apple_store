@@ -10,7 +10,7 @@ export default function Routes() {
     <Stack.Navigator
       initialRouteName="Shop"
       screenOptions={{
-        headerShown: false,
+        headerShown: true,
       }}
     >
       <Stack.Screen name="Shop" component={Shop} />

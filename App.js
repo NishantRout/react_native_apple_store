@@ -5,7 +5,7 @@ import {
 } from "@react-navigation/native";
 import React from "react";
 import { AppearanceProvider, useColorScheme } from "react-native-appearance";
-import Routes from "./routes/Routes";
+import BottomNav from "./routes/BottomNav";
 
 export default function App() {
   const scheme = useColorScheme();
@@ -13,7 +13,7 @@ export default function App() {
   return (
     <AppearanceProvider>
       <NavigationContainer theme={scheme === "dark" ? DarkTheme : DefaultTheme}>
-        <Routes />
+        <BottomNav />
       </NavigationContainer>
     </AppearanceProvider>
   );
